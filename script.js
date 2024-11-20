@@ -2,24 +2,23 @@ const html = document.querySelector('html')
 const focoBt = document.querySelector('.app__card-button--foco')
 const curtoBt = document.querySelector('.app__card-button--curto')
 const longoBt = document.querySelector('.app__card-button--longo')
+const tempo = document.querySelector('.app__card-timer')
+const image = document.querySelector('.app__image-figure')
+const frase = document.querySelector('.app__title')
 
-
-function clicado() {
-    alert('Funcionaaaaa');
-}
 
 focoBt.addEventListener('click', () => {
-    //html.setAttribute('data-contexto', 'foco')
-    alert('1');
+    html.setAttribute('data-contexto', 'foco')
+    startPauseBt.querySelector('span').textContent = "Michael";
 })
 
 curtoBt.addEventListener('click', () => {
-    //html.setAttribute('data-contexto', 'descanso-curto')
-    alert('2');
+    html.setAttribute('data-contexto', 'descanso-curto')
+    startPauseBt.querySelector('span').textContent = "Carlos";
 })
 
 longoBt.addEventListener('click', () => {
-    //html.setAttribute('data-contexto', 'descanso-longo')
-    alert('3');
+    html.setAttribute('data-contexto', 'descanso-longo')
+    startPauseBt.querySelector('span').textContent = "Knopacki";
 })
 
