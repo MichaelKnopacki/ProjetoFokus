@@ -6,7 +6,6 @@ Git : https://github.com/alura-cursos/Fokus
 
 Questão final: "Michael, parabéns pela dedicação aos estudos! Você abordou pontos importantes da aula, como a definição do DOM e a manipulação de elementos HTML utilizando alguns métodos de seleção. Você mencionou as diferenças entre `querySelector`, `querySelectorAll`, `getElementById`, e `getElementsByClassName`, o que é ótimo! Além disso, sua menção à manipulação via atributo `document` indica que você compreendeu a ligação entre o JavaScript e o DOM. No entanto, podemos aprofundar ainda mais alguns conceitos. Além de aprender sobre o DOM, também vimos como ele representa a árvore de nós e objetos, uma estrutura hierárquica que reflete a organização do HTML. Essa visualização em árvore é fundamental para entender como navegar e manipular os elementos. Também vimos a diferença crucial entre o `Document` (um objeto global que representa o documento HTML inteiro) e o `DOM` (a representação programática em árvore desse documento). A manipulação de botões foi um exemplo prático de como usar os seletores e métodos para interagir com elementos específicos do DOM. Por fim, aprendemos a criar variáveis para representar elementos HTML em JavaScript, o que facilita a manipulação e a reutilização desses elementos no código. Continue estudando e praticando!".
 
-
 *************************************************************************************************************************
 
 2. Manipulando elementos da página

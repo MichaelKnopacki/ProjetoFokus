@@ -5,20 +5,21 @@ const longoBt = document.querySelector('.app__card-button--longo')
 const tempo = document.querySelector('.app__card-timer')
 const image = document.querySelector('.app__image-figure')
 const frase = document.querySelector('.app__title')
+const banner = document.querySelector('.app__image')
 
 
 focoBt.addEventListener('click', () => {
     html.setAttribute('data-contexto', 'foco')
-    startPauseBt.querySelector('span').textContent = "Michael";
+    banner.setAttribute( 'src', '/imagens/foco.png')
 })
 
 curtoBt.addEventListener('click', () => {
     html.setAttribute('data-contexto', 'descanso-curto')
-    startPauseBt.querySelector('span').textContent = "Carlos";
+    banner.setAttribute( 'src', './imagens/descanso-curto.png')
 })
 
 longoBt.addEventListener('click', () => {
     html.setAttribute('data-contexto', 'descanso-longo')
-    startPauseBt.querySelector('span').textContent = "Knopacki";
+    banner.setAttribute( 'src', './imagens/descanso-longo.png')
 })
 
