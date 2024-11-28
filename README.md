@@ -15,3 +15,5 @@ Questão final: "Michael, parabéns pela dedicação aos estudos! Você abordou 
 * Refatorar o código: Identificamos linhas de código repetidas e refatoramos o código criando a primeira função do projeto alterarContexto.
 
 *************************************************************************************************************************
+
+3. Aplicando áudio e estilo

@@ -1,0 +1,11 @@
+button {
+    background-color: aqua;
+}
+
+.button.active {
+    background-color: red;
+}
+
+div{
+    background-color: beige;
+}

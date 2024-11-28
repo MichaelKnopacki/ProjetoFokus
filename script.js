@@ -9,17 +9,19 @@ const banner = document.querySelector('.app__image')
 const titulo = document.querySelector('.app__title')
 const botoes = document.querySelectorAll('.app__card-button')
 const musicaFocoInput = document.querySelector('#alternar-musica')
-const musicaFoco = new Audio ('./sons/lun')
+const musica = new Audio ('./sons/luna-rise-part-one.mp3')
+//musica.loop = true
 
-/*
-Crie uma nova variável chamada ‘musicaFoco’ e utilize o objeto Audio para criar uma instância dele com o caminho do arquivo de música "Sons/Luna-Rise-Part-1.mp3";
-Defina o atributo loop do objeto Audio como true para tocar a música em loop;
-Adicione um evento de change ao input ‘musicaFocoInput’ usando addEventListener;
-Crie uma função anônima dentro do evento para verificar se a música está pausada utilizando a propriedade paused do objeto Audio:
-Se estiver pausada, utilize o método play para tocá-la;
-Caso contrário, utilize o método pause para pausar a música.
-*/
-
+musicaFocoInput.addEventListener('change',() =>{
+    console.log("função")
+    if (musica.paused){
+        console.log("play")
+        musica.play()
+    }else{
+        console.log("pause")
+        musica.pause()
+    }
+})
 
 focoBt.addEventListener('click', () => {
     alterarContexto('foco')
