@@ -1,27 +1,51 @@
-const foco = document.querySelector('.button-foco')
-const curto = document.querySelector('.button-curto')
-const longo = document.querySelector('.button-longo')
-const botoes = document.querySelectorAll('.button')
+// Seleciona o botão com a classe 'button-foco' e o armazena na constante 'foco'
+const foco = document.querySelector('.button-foco');
 
-foco.addEventListener('click', ()=> {
-    console.log("foco");
-    foco.classList.add('active')
-})
+// Seleciona o botão com a classe 'button-curto' e o armazena na constante 'curto'
+const curto = document.querySelector('.button-curto');
 
-curto.addEventListener('click', ()=> {
-    console.log("curto");
-    curto.classList.add('active')
-})
+// Seleciona o botão com a classe 'button-longo' e o armazena na constante 'longo'
+const longo = document.querySelector('.button-longo');
 
-longo.addEventListener('click', ()=> {
-    console.log("longo");
-    longo.classList.add('active')
-})
+// Seleciona todos os botões com a classe 'button' e armazena na constante 'botoes' como uma lista (NodeList)
+const botoes = document.querySelectorAll('.button');
 
-function alterarContexto(contexto){
-    html.setAttribute('data-contexto', contexto)
-    
-    botoes.forEach(function (contexto){
-        contexto.classList.remove('active')
-     })
+// Adiciona um evento de clique ao botão 'foco'
+// Quando o botão é clicado, chama a função 'alterarContexto' com o argumento 'foco'
+foco.addEventListener('click', () => {
+    alterarContexto('foco');
+});
+
+// Adiciona um evento de clique ao botão 'curto'
+// Quando o botão é clicado, chama a função 'alterarContexto' com o argumento 'curto'
+curto.addEventListener('click', () => {
+    alterarContexto('curto');
+});
+
+// Adiciona um evento de clique ao botão 'longo'
+// Quando o botão é clicado, chama a função 'alterarContexto' com o argumento 'longo'
+longo.addEventListener('click', () => {
+    alterarContexto('longo');
+});
+
+// Define a função 'alterarContexto', que manipula o comportamento dos botões com base no contexto clicado
+function alterarContexto(contexto) {
+    // Itera por todos os botões na lista 'botoes'
+    botoes.forEach(function (botao) {
+        // Verifica se o botão atual tem o mesmo valor de 'data-contexto' que o contexto recebido
+        if (botao.dataset.contexto === contexto) {
+            // Se o botão já tem a classe 'active', remove essa classe
+            if (botao.classList.contains('active')) {
+                botao.classList.remove('active');
+            } else {
+                // Caso contrário, primeiro remove a classe 'active' de todos os botões
+                botoes.forEach(b => b.classList.remove('active'));
+                // Depois, adiciona a classe 'active' ao botão clicado
+                botao.classList.add('active');
+            }
+        }
+    });
 }
+
+
+

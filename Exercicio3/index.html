@@ -4,11 +4,20 @@
         <script src="script.js" defer ></script>
     </head>
     <body>
-        <button class="button button-foco">Foco</button>
-        <button class="button button-curto">Descanso Curto</button>
-        <button class="button button-longo">Descanso Longo</button>
+        <button data-contexto="foco" class="button button-foco">Foco</button>
+        <button data-contexto="curto" class="button button-curto">Descanso Curto</button>
+        <button data-contexto="longo" class="button button-longo">Descanso Longo</button>
     </body>
 <div>
+<br>
+<div>
+    <li class="app__card-list-item">
+        <label class="toggle">
+            <input class="toggle-checkbox" type="checkbox" id="alternar-musica">
+            <div class="toggle-switch"></div>
+        </label>
+    </li>
+</div>
     <p>1) Inserindo estilos dos botões com JavaScript<br>
         - OK - Crie uma página HTML simples que inclua três botões: "Foco", "Descanso Curto" e "Descanso Longo" (o layout não precisa ser muito complexo).<br> 
         - OK - Cada botão deve inicialmente ter um estilo básico. Utilize o JavaScript para inserir a classe active entre esses botões, de modo que, ao clicar em um botão, ele receba um estilo destacado (por exemplo, cor de fundo e borda diferenciada). <br>
@@ -16,10 +25,10 @@
         
     <p>2) Alternando o estilo dos botões com JavaScript<br>
         - OK -Com o método para aplicar a classe active nos três botões definidos no exercício anterior, repare no seguinte: sempre quando um botão é clicado, o estilo é inserido. <br>
-        Para corrigir isso, aplique, na função alterarContexto, um método para retirar a classe active de modo que ela seja inserida apenas no último botão clicado.<br></p>
+        - OK, com ajuda - Para corrigir isso, aplique, na função alterarContexto, um método para retirar a classe active de modo que ela seja inserida apenas no último botão clicado.<br></p>
         
     <p>3) Controlando a reprodução de música com um Checkbox<br>
-        Desenvolva, no projeto Fokus, um input do tipo checkbox para controlar a reprodução de um arquivo de música. O arquivo de áudio, luna-rise-part-one.mp3, deve começar a tocar quando o checkbox for marcado e parar quando for desmarcado. <br>
+        - OK -Desenvolva, no projeto Fokus, um input do tipo checkbox para controlar a reprodução de um arquivo de música. O arquivo de áudio, luna-rise-part-one.mp3, deve começar a tocar quando o checkbox for marcado e parar quando for desmarcado. <br>
         Implemente essa lógica usando o JavaScript, criando um objeto Audio para o arquivo de música e um EventListener para o checkbox que verifica o estado da propriedade paused do objeto Audio, alternando entre os métodos play e pause conforme o estado do checkbox.<br></p>
         
     <p>4) Reproduzindo arquivo de Audio em modo infinito<br>
